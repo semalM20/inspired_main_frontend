@@ -34,9 +34,7 @@ const Success = () => {
   };
 
   useEffect(() => {
-    if (user?._id) {
-      fetchUserDetails();
-    }
+    fetchUserDetails();
   }, []);
 
   const navigate = useNavigate();
