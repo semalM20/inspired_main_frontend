@@ -26,19 +26,15 @@ const Header = () => {
 
     const data = await fetchData.json();
 
+    const clearCookie = (name) => {
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+    };
+
     if (data.success) {
       toast.success(data.message);
       dispatch(setUserDetails(null));
+      clearCookie("token");
       localStorage.clear();
-      const cookies = document.cookie.split(";");
-
-      for (let i = 0; i < cookies.length; i++) {
-        const cookie = cookies[i];
-        const eqPos = cookie.indexOf("=");
-        const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-        document.cookie =
-          name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/success";
-      }
       navigate("/login");
     }
 
