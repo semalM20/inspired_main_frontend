@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./VideoPlayer.css";
 
 const VideoPlayer = ({ video }) => {
+  useEffect(() => {
+    const elements = document.querySelectorAll(
+      ".VimeoLogo_module_vimeoLogo__3ab50b3e"
+    );
+
+    elements.forEach((element) => {
+      element.addEventListener("click", handleClick);
+    });
+
+    return () => {
+      elements.forEach((element) => {
+        element.removeEventListener("click", handleClick);
+      });
+    };
+  }, []);
+
+  const handleClick = (event) => {
+    event.preventDefault(); // Optionally prevent default behavior
+    console.log("Clicked!");
+  };
+
   if (!video) {
     return <div className="video-player">Select a video to play</div>;
   }

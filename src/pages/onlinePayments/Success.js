@@ -31,9 +31,7 @@ const Success = () => {
     );
 
     const dataApi = await dataResponse.json();
-    console.log("---------------->");
     if (dataApi.success && dataApi.data) {
-      console.log("dataApi---->", dataApi.data);
       localStorage.setItem("session", JSON.stringify(dataApi.data));
       dispatch(setUserDetails(dataApi.data));
     } else {
