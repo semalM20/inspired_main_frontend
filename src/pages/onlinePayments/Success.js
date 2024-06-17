@@ -18,24 +18,26 @@ const Success = () => {
     onlineCourse = userDetails.onlineCoursePayment === 1;
   }
 
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // const fetchUserDetails = async () => {
-  //   const dataResponse = await fetch(SummaryApi.current_user.url, {
-  //     method: SummaryApi.current_user.method,
-  //     credentials: "include",
-  //   });
+  const fetchUserDetails = async () => {
+    const dataResponse = await fetch(SummaryApi.current_user.url, {
+      method: SummaryApi.current_user.method,
+      credentials: "include",
+    });
 
-  //   const dataApi = await dataResponse.json();
-  //   if (dataApi.success && dataApi.data) {
-  //     localStorage.setItem("session", JSON.stringify(dataApi.data));
-  //     dispatch(setUserDetails(dataApi.data));
-  //   }
-  // };
+    const dataApi = await dataResponse.json();
+    console.log("---------------->");
+    if (dataApi.success && dataApi.data) {
+      console.log("dataApi---->", dataApi.data);
+      localStorage.setItem("session", JSON.stringify(dataApi.data));
+      dispatch(setUserDetails(dataApi.data));
+    }
+  };
 
-  // useEffect(() => {
-  //   fetchUserDetails();
-  // }, []);
+  useEffect(() => {
+    fetchUserDetails();
+  }, []);
 
   const navigate = useNavigate();
 
