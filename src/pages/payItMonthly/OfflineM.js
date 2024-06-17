@@ -16,7 +16,7 @@ const OfflineM = () => {
     WebkitTextSizeAdjust: "none",
   };
   return (
-    <>
+    <div className="flex justify-center flex-col items-center h-96">
       <p>Pay the course fee on monthly basis by clicking on the below link</p>
       <div>
         <a
@@ -31,7 +31,7 @@ const OfflineM = () => {
       <p>
         After successful payment, course will be updated in the next 24 hours
       </p>
-    </>
+    </div>
   );
 };
 
