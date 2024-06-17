@@ -19,12 +19,16 @@ const Success = () => {
   }
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const fetchUserDetails = async () => {
-    const dataResponse = await fetch(SummaryApi.current_user.url, {
-      method: SummaryApi.current_user.method,
-      credentials: "include",
-    });
+    const dataResponse = await fetch(
+      SummaryApi.current_user.url + "?userId=" + userDetails._id,
+      {
+        method: SummaryApi.current_user.method,
+        credentials: "include",
+      }
+    );
 
     const dataApi = await dataResponse.json();
     console.log("---------------->");
@@ -32,14 +36,14 @@ const Success = () => {
       console.log("dataApi---->", dataApi.data);
       localStorage.setItem("session", JSON.stringify(dataApi.data));
       dispatch(setUserDetails(dataApi.data));
+    } else {
+      navigate("/login");
     }
   };
 
   useEffect(() => {
     fetchUserDetails();
   }, []);
-
-  const navigate = useNavigate();
 
   const handleClick = async () => {
     navigate("/videoCourse");
