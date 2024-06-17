@@ -152,43 +152,49 @@ const VideoContent = () => {
       id: 16,
       title: "16- SCISSORS PART 4",
       // url: "https://mega.nz/file/U30hSajJ#zT0Wa_TAXP3uvT5eaCCxm5G4-CIFK-huGFCHRpeFuhE",
-      url: "",
+      url: "https://player.vimeo.com/video/959613867?h=b85c20fa81&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 17, title: "17- SCISSORS PART 5", url: "videos/SCI5.mov" },
     {
       id: 17,
       title: "17- SCISSORS PART 5",
       // url: "https://mega.nz/file/Vn1lCAiR#TcKDuBMxQwOTgpiqZ9ui17yK_FpcsVN7rAiP-QI3YoE",
-      url: "",
+      url: "https://player.vimeo.com/video/959614170?h=f775d06d14&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 18, title: "18- SCISSORS PART 6", url: "videos/SCI6.MOV" },
     {
       id: 18,
       title: "18- SCISSORS PART 6",
       // url: "https://mega.nz/file/RntT2RYY#YwmjZX6zKpTsm0dpfZadySn3iDo-teLBNwT4RB_yFq0",
-      url: "",
+      url: "https://player.vimeo.com/video/959614474?h=f603bdcccf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 19, title: "19- SCISSORS PART 7", url: "videos/SCI7.MOV" },
     {
       id: 19,
       title: "19- SCISSORS PART 7",
       // url: "https://mega.nz/file/Uj8CXLRb#safHW2_WqeLOrOSEyicnS1xP48MN0V0VAb6Bmo1xtNM",
-      url: "",
+      url: "https://player.vimeo.com/video/959614265?h=693577daa0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 20, title: "20- HOW TO USE CLIPPER", url: "videos/CLIPPER.mp4" },
     {
       id: 20,
       title: "20- HOW TO USE CLIPPER",
       // url: "https://mega.nz/file/YyFgEZxa#_OKZXYHhp0A3KBRYFPaCPfaem4k8kLAOo1qjcIRWIcw",
-      url: "",
+      url: "https://player.vimeo.com/video/959614526?h=d075df6093&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 21, title: "21- HOW TO USE THE TRIMMER ", url: "videos/TRIMMER.mov" },
     {
       id: 21,
       title: "21- HOW TO USE THE TRIMMER ",
       // url: "https://mega.nz/file/gzFynCwA#45pFdNGaRKj8qCXS1wpI_By4TcJtkhY1uPahu-fGX_g",
-      url: "",
+      url: "https://player.vimeo.com/video/959612824?h=7babe9c02e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // {
     //   id: 22,
     //   title: "22- WHAT IS THE RIGHT POSTURE",
@@ -198,15 +204,17 @@ const VideoContent = () => {
       id: 22,
       title: "22- WHAT IS THE RIGHT POSTURE",
       // url: "https://mega.nz/file/R6kTnTLI#cgFflzLk8zfZH1kOOQbIw_G70omAJBG0pYN6eRUHYWY",
-      url: "",
+      url: "https://player.vimeo.com/video/959612620?h=96de37ab75&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 23, title: "23- BONES OF THE HEAD", url: "videos/BONGS1.mov" },
     {
       id: 23,
       title: "23- BONES OF THE HEAD",
       // url: "https://mega.nz/file/Fj83FBDb#Z4OqXthJqjBT_J5yKXszQv0xlGKJAb46VQxcLEkK26Y",
-      url: "",
+      url: "https://player.vimeo.com/video/959613564?h=21e6dea6cc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // {
     //   id: 24,
     //   title: "24- RIGHT CONSULTATION WITH CLIENT",
@@ -216,22 +224,25 @@ const VideoContent = () => {
       id: 24,
       title: "24- RIGHT CONSULTATION WITH CLIENT",
       // url: "https://mega.nz/file/1yMTFQqD#5upCxK8FGCuZdd0cI-atbOd3GjhntmyEBxCmN7aU0jg",
-      url: "",
+      url: "https://player.vimeo.com/video/959613978?h=bb4881af38&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 25, title: "25- INTRO TO ONE LENGTH", url: "videos/INTRO OL1.mov" },
     {
       id: 25,
       title: "25- INTRO TO ONE LENGTH",
       // url: "https://mega.nz/file/1z1DAJYa#Zkle55RrOtxwa6naLqyzt4Phu_Mli9DyMRbr40H1FlE",
-      url: "",
+      url: "https://player.vimeo.com/video/959615075?h=6f1df9bfeb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 26, title: "26- ONELENGTH HAIRCUT ", url: "videos/OL HAIRCUT.mov" },
     {
       id: 26,
       title: "26- ONELENGTH HAIRCUT ",
       // url: "https://mega.nz/file/hqVwTCBQ#JqLXOmMgm9jL-ej21NnzjUXOgOLOIUxzZN2FZTQpizk",
-      url: "",
+      url: "https://player.vimeo.com/video/959605011?h=4e29d4c05a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // {
     //   id: 27,
     //   title: "27- INTRO SCISSORS UNDERHAND HAIRCUT ",
@@ -241,14 +252,16 @@ const VideoContent = () => {
       id: 27,
       title: "27- INTRO SCISSORS UNDERHAND HAIRCUT ",
       // url: "https://mega.nz/file/YiNzTZyJ#N3Ktb7OlSY-WayFXrMZNXls5j9CjdgMzQikJlCGpqJg",
-      url: "",
+      url: "https://player.vimeo.com/video/959615038?h=7f385329e2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     {
       id: 28,
       title: "28- UNDERHAND HAIRCUT ",
       // url: "https://player.vimeo.com/video/958587018?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      url: "",
+      url: "https://player.vimeo.com/video/959598425?h=09f77c43fb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // {
     //   id: 28,
     //   title: "28- UNDERHAND HAIRCUT ",
@@ -263,15 +276,17 @@ const VideoContent = () => {
       id: 29,
       title: "29- INTRO FOR ONE SIDE HAIRCUT",
       // url: "https://mega.nz/file/Q38gRZ4R#wP9MkTlPjusLFjzK-P_lpKkDSoBUcnd45VM7tGXSdGg",
-      url: "",
+      url: "https://player.vimeo.com/video/959614757?h=077d4c8ef9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 30, title: "30- ONE BACK AND SIDE", url: "videos/ONE HAIRCUT.mov" },
     {
       id: 30,
       title: "30- ONE BACK AND SIDE",
       // url: "https://mega.nz/file/879x2byA#I4jyCSOOAK4zF0NTBMVWCVxYJPxR3peow4ZV8aG84aw",
-      url: "",
+      url: "https://player.vimeo.com/video/959607195?h=52f5467936&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // {
     //   id: 31,
     //   title: "31- INTRO FOR BUZZ CUT ",
@@ -281,15 +296,17 @@ const VideoContent = () => {
       id: 31,
       title: "31- INTRO FOR BUZZ CUT ",
       // url: "https://mega.nz/file/t7NjyRpL#dLq51NCqeVVIhdLoVZo8M93Iu9gFwUgGPdvSgR06ePs",
-      url: "",
+      url: "https://player.vimeo.com/video/959615122?h=41da070799&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 32, title: "32- BUZZCUT HAIRCUT ", url: "videos/BUZZCUT.mov" },
     {
       id: 32,
       title: "32- BUZZCUT HAIRCUT ",
       // url: "https://mega.nz/file/5qFDDDCB#5_PVeWJjzHLev5pDCGwt7aGd6W38_kRsvOYdUxA5Ekw",
-      url: "",
+      url: "https://player.vimeo.com/video/959610969?h=54d021a2e7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // {
     //   id: 33,
     //   title: "33- INTRO FOR CURLY TOP HAIRCUT",
@@ -299,14 +316,16 @@ const VideoContent = () => {
       id: 33,
       title: "33- INTRO FOR CURLY TOP HAIRCUT",
       // url: "https://mega.nz/file/FqkgQCjD#sfk6KDqNI13VGIpC6MiE5PbIoNdvoQYmnfVkHOxshlA",
-      url: "",
+      url: "https://player.vimeo.com/video/959614695?h=4489cc033e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     {
       id: 34,
       title: "34- CURLYTOP BACK AND SIDE HAIRCUT",
       // url: "https://player.vimeo.com/video/958597219?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      url: "",
+      url: "https://player.vimeo.com/video/959602451?h=50774b4d0c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // {
     //   id: 34,
     //   title: "34- CURLYTOP BACK AND SIDE HAIRCUT",
@@ -317,42 +336,47 @@ const VideoContent = () => {
       id: 35,
       title: "35- SKINFADE INTRO",
       // url: "https://mega.nz/file/du9ESDAZ#QyenryQlWhLKnMWOgZYgcX9CxZygKMQrANEACEqGsA4",
-      url: "",
+      url: "https://player.vimeo.com/video/959614417?h=2531a2fb4c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 36, title: "36- BEARD TRIM PART 1", url: "videos/BEARD1.mov" },
     {
       id: 36,
       title: "36- BEARD TRIM PART 1",
       // url: "https://mega.nz/file/AmEl3QTR#5PftbMmvetTRxPTEQb5v1YOvigny2x_mpCPXwseRCI8",
-      url: "",
+      url: "https://player.vimeo.com/video/959609943?h=e2ce4a868c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 37, title: "37- BEARD TRIM PART 2", url: "videos/BEARD2.mov" },
     {
       id: 37,
       title: "37- BEARD TRIM PART 2",
       // url: "https://mega.nz/file/YuVlWQbK#ldWzzAVXvYJ-0PZfy9-J-Mgn7kIcEEaI27C_2Yt179s",
-      url: "",
+      url: "https://player.vimeo.com/video/959609016?h=c6592c79a5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 38, title: "38- STYLING BEARD TRIM", url: "videos/BEARD3.mov" },
     {
       id: 38,
       title: "38- STYLING BEARD TRIM",
       // url: "https://mega.nz/file/0r0Eza5J#nBnAYn8Z6XdJmhjfI0PYm4_UZnbaXDXlYbXTcqzBCpw",
-      url: "",
+      url: "https://player.vimeo.com/video/959611402?h=7bfb2abe73&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 39, title: "39- INTRO FOR BUZZCUT", url: "videos/INTRO BUZZCUT.mov" },
     {
       id: 39,
       title: "39- INTRO FOR BUZZCUT",
       // url: "https://mega.nz/file/t7NjyRpL#dLq51NCqeVVIhdLoVZo8M93Iu9gFwUgGPdvSgR06ePs",
-      url: "",
+      url: "https://player.vimeo.com/video/959615122?h=41da070799&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
+
     // { id: 40, title: "40- BUZZCUT HAIRCUT", url: "videos/BUZZCUT HAIRCUT.mov" },
     {
       id: 40,
       title: "40- BUZZCUT HAIRCUT",
       // url: "https://mega.nz/file/5qFDDDCB#5_PVeWJjzHLev5pDCGwt7aGd6W38_kRsvOYdUxA5Ekw",
-      url: "",
+      url: "https://player.vimeo.com/video/959610969?h=54d021a2e7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
   ];
 
