@@ -299,15 +299,25 @@ const Course = () => {
                     {" "}
                     This course, created by our expert Adrian, includes:{" "}
                   </h4>{" "}
-                  <br></br>
                   <p>
                     {" "}
-                    <strong>
-                      ~ Introduction to equipment and its usage <br></br>~
-                      Various types of haircuts <br></br>~ Beard trimming
-                      techniques <br></br>~ Essential tips and tricks <br></br>~
-                      Proper client consultation methods <br></br>{" "}
-                    </strong>
+                    <h5 style={{ fontSize: "14px" }}>~ Clipper Grades </h5>
+                    <h5 style={{ fontSize: "14px" }}>~ One Length Haircut </h5>
+                    <h5 style={{ fontSize: "14px" }}>
+                      ~ Scissor Cut-Underhand{" "}
+                    </h5>
+                    <h5 style={{ fontSize: "14px" }}>
+                      ~ Clipper Cut 1 Fade-Tapper On The Nape{" "}
+                    </h5>
+                    <h5 style={{ fontSize: "14px" }}>~ Skin Fade </h5>
+                    <h5 style={{ fontSize: "14px" }}>
+                      ~ Beard Trimm-Shape Up{" "}
+                    </h5>
+                    <h5 style={{ fontSize: "14px" }}>~ Buzz Cut Skin Fade </h5>
+                    <h5 style={{ fontSize: "14px" }}>~ Professionalism </h5>
+                    <h5 style={{ fontSize: "14px" }}>~ Consultation</h5>
+                    <h5 style={{ fontSize: "14px" }}>~ Hair Science</h5>
+                    <h5 style={{ fontSize: "14px" }}>~ Clipper Maintenance</h5>
                   </p>
                 </div>
               </div>
@@ -339,12 +349,19 @@ const Course = () => {
                   Beginner Barber Course Modules :
                 </h4>
                 <br></br>
-                <h5>~ Professionalism </h5>
-                <h5>~ Consultation</h5>
-                <h5>~ Hair Science</h5>
-                <h5>~ Finishing and Style </h5>
-                <h5>~ Finding a Job</h5>
-                <h5>~ Clipper Maintenance</h5>
+                <h5 style={{ fontSize: "14px" }}>~ Clipper Grades </h5>
+                <h5 style={{ fontSize: "14px" }}>~ One Length Haircut </h5>
+                <h5 style={{ fontSize: "14px" }}>~ Scissor Cut-Underhand </h5>
+                <h5 style={{ fontSize: "14px" }}>
+                  ~ Clipper Cut 1 Fade-Tapper On The Nape{" "}
+                </h5>
+                <h5 style={{ fontSize: "14px" }}>~ Skin Fade </h5>
+                <h5 style={{ fontSize: "14px" }}>~ Beard Trimm-Shape Up </h5>
+                <h5 style={{ fontSize: "14px" }}>~ Buzz Cut Skin Fade </h5>
+                <h5 style={{ fontSize: "14px" }}>~ Professionalism </h5>
+                <h5 style={{ fontSize: "14px" }}>~ Consultation</h5>
+                <h5 style={{ fontSize: "14px" }}>~ Hair Science</h5>
+                <h5 style={{ fontSize: "14px" }}>~ Clipper Maintenance</h5>
               </div>
             </div>
           </div>
@@ -379,14 +396,14 @@ const Course = () => {
                   Master Class-WorkShop Educator Modules :
                 </h4>
                 <h5> ~ the top part </h5>
-                <h5> ~ The sides </h5>
+                <h5> ~ the sides </h5>
                 <h5> ~ the uniform shape of the haircut </h5>
                 <h5> ~ contrast </h5>
                 <h5> ~ frontal area </h5>
-                <h5> ~ styling Beard </h5>
-                <h5> ~ shape according to Physiognomy </h5>
+                <h5> ~ styling beard </h5>
+                <h5> ~ shape according to physiognomy </h5>
                 <h5> ~ beard maintenance </h5>
-                <h5> ~ Marketing and promotion </h5>
+                <h5> ~ marketing and promotion </h5>
               </div>
             </div>
           </div>
@@ -415,7 +432,7 @@ const Course = () => {
             <p style={{ color: "#977656", marginBottom: "5%" }}>
               <strong className="text-xl">
                 {" "}
-                Sign up now for our Barber courses.{" "}
+                Sign up now for our Barber Courses.{" "}
               </strong>
             </p>
             <p>
@@ -493,8 +510,8 @@ const Course = () => {
               Wednesday 9:30 /17:00 pm <br></br>
               <strong>
                 After finishing the Course, you will have the opportunity to
-                secure a part-time job (with Your clients), we can prepare you
-                well and we can find you a job quickly.
+                secure A Part-Time Job (with Your clients), we will prepare you
+                well and grow you and will help find you a job quickly.
               </strong>{" "}
               <br></br>
               (Details will be provided at the Academy, as well as the program){" "}
@@ -531,8 +548,8 @@ const Course = () => {
               {" "}
               <strong>
                 {" "}
-                *NOTE: You need to have some previous experience or training as
-                a beginner barber (to apply for this course ){" "}
+                *NOTE: You need to have 1 year of experience for the Master
+                Class{" "}
               </strong>{" "}
             </p>
           </div>

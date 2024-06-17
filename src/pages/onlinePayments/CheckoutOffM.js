@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import RedirectToLogin from "../../components/RedirectToLogin";
 import axios from "axios";
 import SummaryApi from "../../common";
-import { useNavigate } from "react-router-dom";
 
 const CheckoutOffM = ({ paymentType, amount }) => {
   const user = useSelector((state) => state?.user?.user);
@@ -25,12 +24,6 @@ const CheckoutOffM = ({ paymentType, amount }) => {
     }
   };
 
-  const navigate = useNavigate();
-
-  const handleOnlineClick = () => {
-    navigate("/offlineMPayItMonthly");
-  };
-
   return (
     <>
       {user?._id ? (
@@ -43,13 +36,6 @@ const CheckoutOffM = ({ paymentType, amount }) => {
             className="bg-red-600 hover:bg-red-700 text-white w-full px-3 py-1 max-w-[150px] rounded-full hover:scale-110 transition-all mx-auto block mt-2"
           >
             Buy Now !
-          </button>
-          <p>OR</p>
-          <button
-            className="bg-red-600 hover:bg-red-700 text-white w-full px-3 py-1 max-w-[150px] rounded-full hover:scale-110 transition-all mx-auto block mt-2"
-            onClick={handleOnlineClick}
-          >
-            Pay It Monthly
           </button>
         </div>
       ) : (

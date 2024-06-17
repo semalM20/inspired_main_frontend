@@ -16,8 +16,8 @@ const Footer = () => {
               <h4>Contact Us</h4>
               <p>
                 Email:{" "}
-                <Link to="mailto:inspiredstudio95@yahoo.com">
-                  inspiredstudio95@yahoo.com
+                <Link to="mailto:Inspiredstudioacademy@yahoo.com">
+                  inspiredstudioacademy@yahoo.com
                 </Link>
               </p>
               <p>

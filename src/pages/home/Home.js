@@ -11,9 +11,9 @@ import SlideImage4 from "../../assets/IMG-20240214-WA0013.jpg";
 
 import iBoxImage1 from "../../assets/spray.PNG";
 import iBoxImage2 from "../../assets/clipper.PNG";
-import iBoxImage3 from "../../assets/comb.PNG";
+import iBoxImage3 from "../../assets/Tech-3.jpg";
 import iBoxImage4 from "../../assets/dryer.PNG";
-import iBoxImage5 from "../../assets/clips.PNG";
+import iBoxImage5 from "../../assets/tech-5.jpg";
 
 import mBoxImage2 from "../../assets/IMG-20240228-WA0007.jpg";
 
@@ -21,7 +21,7 @@ import introImage1 from "../../assets/IMG-20240214-WA0014.jpg";
 import introImage2 from "../../assets/intopic.jpg";
 
 import sliderImage1 from "../../assets/IMG-20240214-WA0008.jpg";
-import sliderImage2 from "../../assets/IMG-20240214-WA0012.jpg";
+import sliderImage2 from "../../assets/sliderbottom.jpg";
 import sliderImage3 from "../../assets/IMG-20240214-WA0017.jpg";
 import sliderImage4 from "../../assets/IMG-20240214-WA0015.jpg";
 import sliderImage5 from "../../assets/IMG-20240214-WA0013.jpg";

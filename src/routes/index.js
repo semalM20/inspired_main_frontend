@@ -18,8 +18,6 @@ import Failed from "../pages/onlinePayments/Failed";
 import BookingConfirmedOnline from "../pages/BookingConfirmedOnline";
 import BookingConfirmedOfflineB from "../pages/BookingConfirmedOfflineB";
 import BookingConfirmedOfflineM from "../pages/BookingConfirmedOfflineM";
-import Online from "../pages/payItMonthly/Online";
-import OfflineM from "../pages/payItMonthly/OfflineM";
 import OfflineB from "../pages/payItMonthly/OfflineB";
 import CheckoutOffB from "../pages/onlinePayments/CheckoutOffB";
 import CheckoutOffM from "../pages/onlinePayments/CheckoutOffM";
@@ -65,10 +63,7 @@ const router = createBrowserRouter([
         path: "bookingConfirmedOnline",
         element: <BookingConfirmedOnline />,
       },
-      {
-        path: "onlinePayItMonthly",
-        element: <Online />,
-      },
+
       {
         path: "offlineBCoursePayment",
         element: (
@@ -92,10 +87,6 @@ const router = createBrowserRouter([
       {
         path: "bookingConfirmedOfflineM",
         element: <BookingConfirmedOfflineM />,
-      },
-      {
-        path: "OfflineMPayItMonthly",
-        element: <OfflineM />,
       },
 
       {
