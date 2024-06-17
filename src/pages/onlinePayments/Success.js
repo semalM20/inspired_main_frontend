@@ -42,7 +42,11 @@ const Success = () => {
   };
 
   useEffect(() => {
-    fetchUserDetails();
+    if (userDetails) {
+      fetchUserDetails();
+    } else {
+      navigate("/login");
+    }
   }, []);
 
   const handleClick = async () => {
