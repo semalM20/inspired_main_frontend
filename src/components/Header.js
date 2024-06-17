@@ -43,11 +43,8 @@ const Header = () => {
       <header>
         <div className="top-bar">
           <div className="left-content">
-            <Link to="#" className="mobile-link">
+            <Link to="tel:+44 7448 452820" className="mobile-link">
               Mobile
-            </Link>
-            <Link to="#" className="map-link">
-              Map
             </Link>
           </div>
           <div className="right-content">

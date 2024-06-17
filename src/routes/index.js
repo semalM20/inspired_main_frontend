@@ -63,7 +63,7 @@ const router = createBrowserRouter([
       {
         path: "onlineCoursePayment",
         // 1250
-        element: <Checkoutt paymentType="onlineCoursePayment" amount="1" />,
+        element: <Checkoutt paymentType="onlineCoursePayment" amount="1250" />,
       },
       {
         path: "bookingConfirmedOnline",
@@ -74,7 +74,7 @@ const router = createBrowserRouter([
         path: "offlineBCoursePayment",
         // 2000
         element: (
-          <CheckoutOffB paymentType="offlineBCoursePayment" amount="1" />
+          <CheckoutOffB paymentType="offlineBCoursePayment" amount="1999" />
         ),
       },
       {
@@ -89,7 +89,7 @@ const router = createBrowserRouter([
         path: "offlineMCoursePayment",
         // 300
         element: (
-          <CheckoutOffM paymentType="offlineMCoursePayment" amount="1" />
+          <CheckoutOffM paymentType="offlineMCoursePayment" amount="300" />
         ),
       },
       {

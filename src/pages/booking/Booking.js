@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../style.css";
 import "../mediaqueries.css";
 import "./Booking.css";
