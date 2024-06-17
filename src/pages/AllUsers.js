@@ -94,6 +94,9 @@ const AllUsers = () => {
           email={updateUserDetails.email}
           role={updateUserDetails.role}
           userId={updateUserDetails._id}
+          onlineCoursePayment={updateUserDetails.onlineCoursePayment}
+          offlineBCoursePayment={updateUserDetails.offlineBCoursePayment}
+          offlineMCoursePayment={updateUserDetails.offlineMCoursePayment}
           callFunc={fetchAllUsers}
         />
       )}

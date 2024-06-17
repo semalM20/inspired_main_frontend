@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../style.css";
 import "../mediaqueries.css";
 import "./Booking.css";
@@ -8,9 +8,9 @@ import courseBoxImage2 from "../../assets/121pay.jpg";
 import axios from "axios";
 import { toast } from "react-toastify";
 import SummaryApi from "../../common";
-// import { useDispatch } from "react-redux";
-// import { setUserDetails } from "../../store/userSlice";
 import Footer from "../../components/Footer";
+import { useDispatch } from "react-redux";
+import { setUserDetails } from "../../store/userSlice";
 
 const Booking = () => {
   const [name, setName] = useState("");
@@ -59,6 +59,34 @@ const Booking = () => {
   // useEffect(() => {
   //   fetchUserDetails();
   // }, []);
+
+  const dispatch = useDispatch();
+
+  const fetchUserDetails = async () => {
+    const dataResponse = await fetch(
+      SummaryApi.current_user.url + "?userId=" + userDetails._id,
+      {
+        method: SummaryApi.current_user.method,
+        credentials: "include",
+      }
+    );
+
+    const dataApi = await dataResponse.json();
+    if (dataApi.success && dataApi.data) {
+      localStorage.setItem("session", JSON.stringify(dataApi.data));
+      dispatch(setUserDetails(dataApi.data));
+    } else {
+      navigate("/login");
+    }
+  };
+
+  useEffect(() => {
+    if (userDetails) {
+      fetchUserDetails();
+    } else {
+      navigate("/login");
+    }
+  }, []);
 
   const handleOnlineCoursePayment = () => {
     if (onlineCourse === 0) {

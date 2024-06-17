@@ -4,11 +4,34 @@ import { IoMdClose } from "react-icons/io";
 import SummaryApi from "../common";
 import { toast } from "react-toastify";
 
-const ChangeUserRole = ({ name, email, role, onClose, userId, callFunc }) => {
+const ChangeUserRole = ({
+  name,
+  email,
+  role,
+  onClose,
+  userId,
+  callFunc,
+  onlineCoursePayment,
+  offlineBCoursePayment,
+  offlineMCoursePayment,
+}) => {
   const [userRole, setUserRole] = useState(role);
+  const [onlineCourse, setOnlineCourse] = useState(onlineCoursePayment);
+  const [offlineBCourse, setOfflineBCourse] = useState(offlineBCoursePayment);
+  const [offlineMCourse, setOfflineMCourse] = useState(offlineMCoursePayment);
 
   const handleOnChangeSelect = (e) => {
     setUserRole(e.target.value);
+  };
+
+  const handleOnlineCourseChangeSelect = (e) => {
+    setOnlineCourse(e.target.value);
+  };
+  const handleOfflineBCourseChangeSelect = (e) => {
+    setOfflineBCourse(e.target.value);
+  };
+  const handleOfflineMCourseChangeSelect = (e) => {
+    setOfflineMCourse(e.target.value);
   };
 
   const updateUserRole = async () => {
@@ -21,6 +44,9 @@ const ChangeUserRole = ({ name, email, role, onClose, userId, callFunc }) => {
       body: JSON.stringify({
         userId: userId,
         role: userRole,
+        onlineCoursePayment: onlineCourse,
+        offlineBCoursePayment: offlineBCourse,
+        offlineMCoursePayment: offlineMCourse,
       }),
     });
 
@@ -45,6 +71,55 @@ const ChangeUserRole = ({ name, email, role, onClose, userId, callFunc }) => {
         <h1 className="pb-4 text-lg font-medium">Change User Role</h1>
         <p>Name: {name}</p>
         <p>Email: {email}</p>
+
+        <div className="flex items-center justify-between my-4">
+          <p>Online Course: </p>
+          <select
+            className="border px-4 py-1"
+            value={onlineCourse}
+            onChange={handleOnlineCourseChangeSelect}
+          >
+            {Object.values([0, 1]).map((el) => {
+              return (
+                <option value={el} key={el}>
+                  {el}
+                </option>
+              );
+            })}
+          </select>
+        </div>
+        <div className="flex items-center justify-between my-4">
+          <p>Beginner's Course: </p>
+          <select
+            className="border px-4 py-1"
+            value={offlineBCourse}
+            onChange={handleOfflineBCourseChangeSelect}
+          >
+            {Object.values([0, 1]).map((el) => {
+              return (
+                <option value={el} key={el}>
+                  {el}
+                </option>
+              );
+            })}
+          </select>
+        </div>
+        <div className="flex items-center justify-between my-4">
+          <p>Master's Course: </p>
+          <select
+            className="border px-4 py-1"
+            value={offlineMCourse}
+            onChange={handleOfflineMCourseChangeSelect}
+          >
+            {Object.values([0, 1]).map((el) => {
+              return (
+                <option value={el} key={el}>
+                  {el}
+                </option>
+              );
+            })}
+          </select>
+        </div>
 
         <div className="flex items-center justify-between my-4">
           <p>Role: </p>
