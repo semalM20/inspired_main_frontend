@@ -34,7 +34,7 @@ const Success = () => {
   };
 
   useEffect(() => {
-    if (user) {
+    if (userDetails) {
       fetchUserDetails();
     }
   }, []);
