@@ -20,7 +20,7 @@ const OfflineB = () => {
       <p>Pay the course fee on monthly basis by clicking on the below link</p>
 
       {/* test for 2000 gbp */}
-      <div>
+      {/* <div>
         <a
           href="https://app.payitmonthly.uk/agreement/pay-by-link/6f73846d-fd9d-493d-99fb-dba0d4314ec2/L3NJLIE1SzWOoOo5sM0CUi5ya/button"
           target="_blank"
@@ -29,10 +29,10 @@ const OfflineB = () => {
         >
           Pay By Pay It Monthly
         </a>
-      </div>
+      </div> */}
 
       {/* live 10 gbp  */}
-      {/* <div>
+      <div>
         <a
           href="https://app.payitmonthly.uk/agreement/pay-by-link/e54c32b1-ac8c-4c22-9338-d2c15a7547e3/fgg8IBS3iaBiZS77zZw5r6g9S/button"
           target="_blank"
@@ -41,7 +41,7 @@ const OfflineB = () => {
         >
           Pay By Pay It Monthly
         </a>
-      </div> */}
+      </div>
       <p>
         After successful payment, course will be updated in the next 24 hours
       </p>

@@ -380,6 +380,10 @@ const VideoContent = () => {
     },
   ];
 
+  const takeTest = () => {
+    navigate("/educationTest");
+  };
+
   return (
     <>
       {user?._id ? (
@@ -391,6 +395,17 @@ const VideoContent = () => {
             <div className="app">
               <Sidebar videos={videos} onVideoSelect={setSelectedVideo} />
               <VideoPlayer video={selectedVideo} />
+            </div>
+            <div className="flex flex-col justify-center items-center border-2 border-black-600 bg-black mt-5">
+              <p className="text-white font-medium">
+                Click on the button to take test
+              </p>
+              <button
+                className="px-3 py-1 m-2 rounded text-white bg-red-600 hover:bg-red-700"
+                onClick={takeTest}
+              >
+                Final Education Course Test
+              </button>
             </div>
           </>
         ) : (

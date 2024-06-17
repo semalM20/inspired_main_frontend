@@ -21,6 +21,7 @@ import BookingConfirmedOfflineM from "../pages/BookingConfirmedOfflineM";
 import OfflineB from "../pages/payItMonthly/OfflineB";
 import CheckoutOffB from "../pages/onlinePayments/CheckoutOffB";
 import CheckoutOffM from "../pages/onlinePayments/CheckoutOffM";
+import FinalTest from "../pages/courseVideo/FinalTest";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "videoCourse",
         element: <VideoContent />,
+      },
+      {
+        path: "educationTest",
+        element: <FinalTest />,
       },
       {
         path: "onlineCoursePayment",
