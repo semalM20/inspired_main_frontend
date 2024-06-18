@@ -34,6 +34,7 @@ const Booking = () => {
   const userDetails = JSON.parse(localStorage.getItem("session"));
 
   console.log(userDetails, "user------>");
+  window.alert(JSON.stringify(userDetails));
 
   let offlineBCourse, offlineMCourse, onlineCourse;
 
