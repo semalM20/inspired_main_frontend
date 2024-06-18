@@ -75,6 +75,7 @@ const Booking = () => {
     );
 
     const dataApi = await dataResponse.json();
+    window.alert(JSON.stringify(dataApi));
     if (dataApi.success && dataApi.data) {
       localStorage.setItem("session", JSON.stringify(dataApi.data));
       dispatch(setUserDetails(dataApi.data));
