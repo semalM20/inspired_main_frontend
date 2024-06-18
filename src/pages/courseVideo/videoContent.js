@@ -47,6 +47,12 @@ const VideoContent = () => {
       url: "https://player.vimeo.com/video/959612962?h=4111db57a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
+    {
+      id: 4,
+      title: "4- EQUIPMENTS TO BUY",
+      url: "https://player.vimeo.com/video/961367924?h=8d89152c8a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    },
+
     // { id: 4, title: "4- INTRO OF EQUIPMENTS", url: "videos/EQUIP1 INTRO.mov" },
     {
       id: 4,
@@ -117,6 +123,12 @@ const VideoContent = () => {
       title: "12- EQUIPMENT9",
       // url: "https://mega.nz/file/tzlmwSrA#lNrK-1uWYdYGe79JE2EmlDsxEpXJyYpLFWc79iZp4TA",
       url: "https://player.vimeo.com/video/959614805?h=16b1b3b757&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    },
+
+    {
+      id: 13,
+      title: "13- BONE OF THE HEAD",
+      url: "https://player.vimeo.com/video/961393345?h=7152a4eb02&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
     // {
