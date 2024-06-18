@@ -363,20 +363,28 @@ const VideoContent = () => {
       url: "https://player.vimeo.com/video/959611402?h=7bfb2abe73&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
-    // { id: 39, title: "39- INTRO FOR BUZZCUT", url: "videos/INTRO BUZZCUT.mov" },
     {
       id: 39,
-      title: "39- INTRO FOR BUZZCUT",
-      // url: "https://mega.nz/file/t7NjyRpL#dLq51NCqeVVIhdLoVZo8M93Iu9gFwUgGPdvSgR06ePs",
-      url: "https://player.vimeo.com/video/959615122?h=41da070799&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      title: "39- TIPS AND TRICKS 1",
+      url: "https://player.vimeo.com/video/961349915?h=2fa69b2532&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
-    // { id: 40, title: "40- BUZZCUT HAIRCUT", url: "videos/BUZZCUT HAIRCUT.mov" },
     {
       id: 40,
-      title: "40- BUZZCUT HAIRCUT",
-      // url: "https://mega.nz/file/5qFDDDCB#5_PVeWJjzHLev5pDCGwt7aGd6W38_kRsvOYdUxA5Ekw",
-      url: "https://player.vimeo.com/video/959610969?h=54d021a2e7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      title: "40- TIPS AND TRICKS 2",
+      url: "https://player.vimeo.com/video/961350289?h=c0750d07be&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    },
+
+    {
+      id: 41,
+      title: "41- TIPS AND TRICKS 3",
+      url: "https://player.vimeo.com/video/961349734?h=5d33c61747&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    },
+
+    {
+      id: 42,
+      title: "42- TIPS AND TRICKS ENDING",
+      url: "https://player.vimeo.com/video/961350397?h=aceb61aa7b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
   ];
 
@@ -404,7 +412,7 @@ const VideoContent = () => {
                 to="/pdfCourse"
                 className="px-3 py-1 m-2 rounded text-white bg-red-600 hover:bg-red-700"
               >
-                Course PDF
+                BEGINNER BARBER BOOK - STEP BY STEP
               </Link>
               <hr
                 style={{

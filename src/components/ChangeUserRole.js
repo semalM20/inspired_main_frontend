@@ -142,7 +142,7 @@ const ChangeUserRole = ({
           className="w-fit mx-auto block py-1 px-3 rounded-full bg-red-600 text-white hover:bg-red-700"
           onClick={updateUserRole}
         >
-          update User
+          Update User
         </button>
       </div>
     </div>
