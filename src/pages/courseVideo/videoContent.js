@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import VideoPlayer from "./VideoPlayer";
 import { useSelector } from "react-redux";
 import RedirectToLogin from "../../components/RedirectToLogin";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const VideoContent = () => {
   const user = useSelector((state) => state?.user?.user);
@@ -397,13 +397,23 @@ const VideoContent = () => {
               <VideoPlayer video={selectedVideo} />
             </div>
             <div className="flex flex-col justify-center items-center border-2 border-black-600 bg-black mt-5">
-              {/* <div>
-                <iframe
-                  src="public/presentation.pdf"
-                  width="100%"
-                  height="500px"
-                />
-              </div> */}
+              <p className="text-white font-medium">
+                Click below to open PDF Course
+              </p>
+              <Link
+                to="/pdfCourse"
+                className="px-3 py-1 m-2 rounded text-white bg-red-600 hover:bg-red-700"
+              >
+                Course PDF
+              </Link>
+              <hr
+                style={{
+                  backgroundColor: "white",
+                  width: "100%",
+                  height: "2px",
+                }}
+              />
+
               <p className="text-white font-medium">
                 Click on the button to take test
               </p>
