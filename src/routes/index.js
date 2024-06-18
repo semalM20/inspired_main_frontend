@@ -22,6 +22,8 @@ import OfflineB from "../pages/payItMonthly/OfflineB";
 import CheckoutOffB from "../pages/onlinePayments/CheckoutOffB";
 import CheckoutOffM from "../pages/onlinePayments/CheckoutOffM";
 import FinalTest from "../pages/courseVideo/FinalTest";
+import Review from "../pages/reviews/Review";
+import ReviewList from "../pages/reviews/ReviewList";
 
 const router = createBrowserRouter([
   {
@@ -112,6 +114,14 @@ const router = createBrowserRouter([
       {
         path: "resetPassword/:token",
         element: <ResetPassword />,
+      },
+      {
+        path: "reviews",
+        element: <Review />,
+      },
+      {
+        path: "viewReviews",
+        element: <ReviewList />,
       },
       {
         path: "admin-panel",

@@ -72,6 +72,9 @@ const Header = () => {
             <Link to="/shop" className="nav-link">
               SHOP
             </Link>
+            <Link to="/reviews" className="nav-link">
+              ADD REVIEWS
+            </Link>
           </div>
           <div className="flex items-center gap-7">
             <div className="relative flex justify-center">

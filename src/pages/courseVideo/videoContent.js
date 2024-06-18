@@ -397,6 +397,13 @@ const VideoContent = () => {
               <VideoPlayer video={selectedVideo} />
             </div>
             <div className="flex flex-col justify-center items-center border-2 border-black-600 bg-black mt-5">
+              {/* <div>
+                <iframe
+                  src="public/presentation.pdf"
+                  width="100%"
+                  height="500px"
+                />
+              </div> */}
               <p className="text-white font-medium">
                 Click on the button to take test
               </p>
