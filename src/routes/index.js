@@ -25,6 +25,8 @@ import FinalTest from "../pages/courseVideo/FinalTest";
 import Review from "../pages/reviews/Review";
 import ReviewForm from "../pages/reviews/ReviewForm";
 import PdfCourse from "../pages/courseVideo/PdfCourse";
+import PdfCourse2 from "../pages/courseVideo/PdfCourse2";
+import PdfCourse3 from "../pages/courseVideo/PdfCourse3";
 
 const router = createBrowserRouter([
   {
@@ -127,6 +129,14 @@ const router = createBrowserRouter([
       {
         path: "pdfCourse",
         element: <PdfCourse />,
+      },
+      {
+        path: "pdfCourse2",
+        element: <PdfCourse2 />,
+      },
+      {
+        path: "pdfCourse3",
+        element: <PdfCourse3 />,
       },
       {
         path: "admin-panel",

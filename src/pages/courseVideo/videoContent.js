@@ -319,27 +319,21 @@ const VideoContent = () => {
       url: "https://player.vimeo.com/video/959610969?h=54d021a2e7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
-    {
-      id: 35,
-      title: "35- BUZZCUT HAIRCUT ",
-      url: "https://player.vimeo.com/video/961401983?h=ebaa213371&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    },
-
     // {
     //   id: 33,
     //   title: "33- INTRO FOR CURLY TOP HAIRCUT",
     //   url: "videos/CURLYTOP INTRO.mov",
     // },
     {
-      id: 36,
-      title: "36- INTRO FOR CURLY TOP HAIRCUT",
+      id: 35,
+      title: "35- INTRO FOR CURLY TOP HAIRCUT",
       // url: "https://mega.nz/file/FqkgQCjD#sfk6KDqNI13VGIpC6MiE5PbIoNdvoQYmnfVkHOxshlA",
       url: "https://player.vimeo.com/video/959614695?h=4489cc033e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
     {
-      id: 37,
-      title: "37- CURLYTOP BACK AND SIDE HAIRCUT",
+      id: 36,
+      title: "36- CURLYTOP BACK AND SIDE HAIRCUT",
       // url: "https://player.vimeo.com/video/958597219?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       url: "https://player.vimeo.com/video/959602451?h=50774b4d0c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
@@ -351,40 +345,46 @@ const VideoContent = () => {
     // },
     // { id: 35, title: "35- SKINFADE INTRO", url: "videos/SKINFADE INTRO.mov" },
     {
-      id: 38,
-      title: "38- SKINFADE INTRO",
+      id: 37,
+      title: "37- SKINFADE INTRO",
       // url: "https://mega.nz/file/du9ESDAZ#QyenryQlWhLKnMWOgZYgcX9CxZygKMQrANEACEqGsA4",
       url: "https://player.vimeo.com/video/959614417?h=2531a2fb4c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
     {
-      id: 39,
-      title: "39- SKINFADE HAIRCUT",
+      id: 38,
+      title: "38- SKINFADE HAIRCUT",
       url: "https://player.vimeo.com/video/959592146?h=1f9563a6fa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
     // { id: 36, title: "36- BEARD TRIM PART 1", url: "videos/BEARD1.mov" },
     {
-      id: 40,
-      title: "40- BEARD TRIM PART 1",
+      id: 39,
+      title: "39- BEARD TRIM PART 1",
       // url: "https://mega.nz/file/AmEl3QTR#5PftbMmvetTRxPTEQb5v1YOvigny2x_mpCPXwseRCI8",
       url: "https://player.vimeo.com/video/959609943?h=e2ce4a868c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
     // { id: 37, title: "37- BEARD TRIM PART 2", url: "videos/BEARD2.mov" },
     {
-      id: 41,
-      title: "41- BEARD TRIM PART 2",
+      id: 40,
+      title: "40- BEARD TRIM PART 2",
       // url: "https://mega.nz/file/YuVlWQbK#ldWzzAVXvYJ-0PZfy9-J-Mgn7kIcEEaI27C_2Yt179s",
       url: "https://player.vimeo.com/video/959609016?h=c6592c79a5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
     // { id: 38, title: "38- STYLING BEARD TRIM", url: "videos/BEARD3.mov" },
     {
-      id: 42,
-      title: "42- STYLING BEARD TRIM",
+      id: 41,
+      title: "41- STYLING BEARD TRIM",
       // url: "https://mega.nz/file/0r0Eza5J#nBnAYn8Z6XdJmhjfI0PYm4_UZnbaXDXlYbXTcqzBCpw",
       url: "https://player.vimeo.com/video/959611402?h=7bfb2abe73&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    },
+
+    {
+      id: 42,
+      title: "42- BUZZCUT HAIRCUT ",
+      url: "https://player.vimeo.com/video/961401983?h=ebaa213371&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
     {
@@ -407,7 +407,7 @@ const VideoContent = () => {
 
     {
       id: 46,
-      title: "46- TIPS AND TRICKS ENDING",
+      title: "46- END COURSE VIDEO",
       url: "https://player.vimeo.com/video/961350397?h=aceb61aa7b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
   ];
@@ -429,15 +429,31 @@ const VideoContent = () => {
               <VideoPlayer video={selectedVideo} />
             </div>
             <div className="flex flex-col justify-center items-center border-2 border-black-600 bg-black mt-5">
-              <p className="text-white font-medium">
-                Click below to open PDF Course
-              </p>
-              <Link
-                to="/pdfCourse"
-                className="px-3 py-1 m-2 rounded text-white bg-red-600 hover:bg-red-700"
-              >
-                BEGINNER BARBER BOOK - STEP BY STEP
-              </Link>
+              <div className="flex flex-col w-full justify-center items-center">
+                <p className="text-white font-medium">
+                  Click below to open PDF Course
+                </p>
+                <div className="flex justify-around w-full">
+                  <Link
+                    to="/pdfCourse"
+                    className="px-3 py-1 m-2 rounded text-white bg-red-600 hover:bg-red-700"
+                  >
+                    BEGINNER BARBER BOOK
+                  </Link>
+                  <Link
+                    to="/pdfCourse2"
+                    className="px-3 py-1 m-2 rounded text-white bg-red-600 hover:bg-red-700"
+                  >
+                    CONTENTS MODULESS ISA
+                  </Link>
+                  <Link
+                    to="/pdfCourse3"
+                    className="px-3 py-1 m-2 rounded text-white bg-red-600 hover:bg-red-700"
+                  >
+                    FUNDAMENTALS BOOK ISA
+                  </Link>
+                </div>
+              </div>
               <hr
                 style={{
                   backgroundColor: "white",
