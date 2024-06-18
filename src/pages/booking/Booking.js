@@ -33,9 +33,6 @@ const Booking = () => {
 
   const userDetails = JSON.parse(localStorage.getItem("session"));
 
-  console.log(userDetails, "user------>");
-  window.alert(JSON.stringify(userDetails));
-
   let offlineBCourse, offlineMCourse, onlineCourse;
 
   if (userDetails) {
@@ -75,7 +72,6 @@ const Booking = () => {
     );
 
     const dataApi = await dataResponse.json();
-    window.alert(JSON.stringify(dataApi));
     if (dataApi.success && dataApi.data) {
       localStorage.setItem("session", JSON.stringify(dataApi.data));
       dispatch(setUserDetails(dataApi.data));
