@@ -33,6 +33,8 @@ const Booking = () => {
 
   const userDetails = JSON.parse(localStorage.getItem("session"));
 
+  console.log(userDetails, "user------>");
+
   let offlineBCourse, offlineMCourse, onlineCourse;
 
   if (userDetails) {
@@ -80,13 +82,13 @@ const Booking = () => {
     }
   };
 
-  useEffect(() => {
-    if (userDetails) {
-      fetchUserDetails();
-    } else {
-      navigate("/login");
-    }
-  }, []);
+  // useEffect(() => {
+  if (userDetails) {
+    fetchUserDetails();
+  } else {
+    navigate("/login");
+  }
+  // }, []);
 
   const handleOnlineCoursePayment = () => {
     if (onlineCourse === 0) {
