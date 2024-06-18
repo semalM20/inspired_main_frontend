@@ -30,6 +30,7 @@ import sliderImage7 from "../../assets/slider2.jpg";
 import sliderImage8 from "../../assets/slider3.jpg";
 import sliderImage9 from "../../assets/IMG-20240214-WA0015.jpg";
 import sliderImage10 from "../../assets/IMG-20240214-WA0013.jpg";
+import trophyImage from "../../assets/SliderBottom1.jpg";
 import Footer from "../../components/Footer";
 
 import certificationVideo from "../../assets/certification.mp4";
@@ -50,6 +51,7 @@ const Home = () => {
     sliderImage8,
     sliderImage9,
     sliderImage10,
+    trophyImage,
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
