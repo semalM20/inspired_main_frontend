@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import SummaryApi from "../../common";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const formStyle = {
   display: "flex",
@@ -33,6 +34,7 @@ function ReviewForm() {
       rating,
       comment,
     });
+    toast.success("Review added successfully");
     setName("");
     setRating("");
     setComment("");
