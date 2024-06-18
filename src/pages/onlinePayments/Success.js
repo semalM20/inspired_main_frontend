@@ -42,10 +42,8 @@ const Success = () => {
   useEffect(() => {
     if (userDetails) {
       fetchUserDetails();
-    } else {
-      navigate("/login");
     }
-  }, []);
+  }, [userDetails]);
 
   const handleClick = async () => {
     navigate("/videoCourse");

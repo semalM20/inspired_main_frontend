@@ -381,7 +381,7 @@ const Course = () => {
         ></div>
 
         <div className="course-box">
-          <h3>MASTER CLASS WORKSHOP 1 TO 1</h3>
+          <h3>MASTER CLASS WORKSHOP 1/2/1</h3>
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">

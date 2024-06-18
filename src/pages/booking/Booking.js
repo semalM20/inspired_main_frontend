@@ -83,13 +83,8 @@ const Booking = () => {
   };
 
   useEffect(() => {
-    const _user = localStorage.getItem("session");
-    if (_user) {
-      fetchUserDetails();
-    } else {
-      navigate("/login");
-    }
-  }, []);
+    if (userDetails) fetchUserDetails();
+  }, [userDetails]);
 
   const handleOnlineCoursePayment = () => {
     if (onlineCourse === 0) {
