@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../style.css";
 import "../mediaqueries.css";
 import "./Booking.css";
@@ -82,13 +82,14 @@ const Booking = () => {
     }
   };
 
-  // useEffect(() => {
-  if (userDetails) {
-    fetchUserDetails();
-  } else {
-    navigate("/login");
-  }
-  // }, []);
+  useEffect(() => {
+    const _user = localStorage.getItem("session");
+    if (_user) {
+      fetchUserDetails();
+    } else {
+      navigate("/login");
+    }
+  }, []);
 
   const handleOnlineCoursePayment = () => {
     if (onlineCourse === 0) {
