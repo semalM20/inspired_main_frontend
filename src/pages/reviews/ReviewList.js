@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import SummaryApi from "../../common";
+import { useNavigate } from "react-router-dom";
 
 const listStyle = {
   maxWidth: "600px",
@@ -30,6 +31,12 @@ function ReviewList() {
     fetchReviews();
   }, []);
 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/addReviews");
+  };
+
   return (
     <>
       <div className=" flex justify-center items-center">
@@ -51,6 +58,12 @@ function ReviewList() {
           <p>No reviews yet.</p>
         )}
       </div>
+      <button
+        className="w-fit mx-auto block py-1 px-3 rounded bg-red-600 text-white hover:bg-red-700 mt-4"
+        onClick={handleClick}
+      >
+        Add Reviews
+      </button>
     </>
   );
 }

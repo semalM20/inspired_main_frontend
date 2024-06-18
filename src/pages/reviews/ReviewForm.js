@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import SummaryApi from "../../common";
-import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const formStyle = {
@@ -20,6 +19,10 @@ const inputStyle = {
   padding: "10px",
   borderRadius: "5px",
   border: "1px solid #ccc",
+};
+const appStyle = {
+  textAlign: "center",
+  padding: "20px",
 };
 
 function ReviewForm() {
@@ -40,14 +43,16 @@ function ReviewForm() {
     setComment("");
   };
 
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/viewReviews");
-  };
-
   return (
     <>
+      <div
+        style={appStyle}
+        className="flex flex-col justify-center items-center"
+      >
+        <h1 className="uppercase bg-red-700 text-white w-[266px] h-8 text-center mb-2 p-1 rounded font-medium">
+          Reviews
+        </h1>
+      </div>
       <form style={formStyle} onSubmit={handleSubmit}>
         <input
           type="text"
@@ -81,12 +86,6 @@ function ReviewForm() {
           Submit
         </button>
       </form>
-      <button
-        className="w-fit mx-auto block py-1 px-3 rounded bg-red-600 text-white hover:bg-red-700 mt-4"
-        onClick={handleClick}
-      >
-        View Reviews
-      </button>
     </>
   );
 }

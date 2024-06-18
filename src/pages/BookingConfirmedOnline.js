@@ -40,19 +40,28 @@ const BookingConfirmed = () => {
             </div>
           </>
         ) : (
-          <div className="flex justify-center flex-col items-center h-96">
-            <p className="text-red-600 font-bold">
-              Video Course Fee: 1250 GBP{" "}
-            </p>
-            <p>You have not purchased the video course</p>
-            <p>click here to buy the course </p>
-            <button
-              onClick={handleClick}
-              className="px-3 py-1 m-2 rounded-full text-white bg-red-600 hover:bg-red-700"
+          <>
+            <p
+              className="uppercase flex justify-center items-center p-2 text-red-700 font-bold"
+              style={{ fontSize: "20px" }}
             >
-              Buy Video Course
-            </button>
-          </div>
+              <sup className="font-bold">**</sup>
+              Online Video course will be available only for 3 months
+            </p>
+            <div className="flex justify-center flex-col items-center h-96">
+              <p className="text-red-600 font-bold">
+                Video Course Fee: 500 GBP{" "}
+              </p>
+              <p>You have not purchased the video course</p>
+              <p>click here to buy the course </p>
+              <button
+                onClick={handleClick}
+                className="px-3 py-1 m-2 rounded-full text-white bg-red-600 hover:bg-red-700"
+              >
+                Buy Video Course
+              </button>
+            </div>
+          </>
         )
       ) : (
         <RedirectToLogin />

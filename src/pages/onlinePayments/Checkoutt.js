@@ -27,17 +27,26 @@ const Checkoutt = ({ paymentType, amount }) => {
   return (
     <>
       {user?._id ? (
-        <div className="flex justify-center flex-col items-center h-96">
-          <p className="text-red-600 font-bold">Course Fee: {amount} GBP</p>
-          <p>You have not purchased the course yet!</p>
-          <p>Click below to buy it</p>
-          <button
-            onClick={HandleSubmit}
-            className="bg-red-600 hover:bg-red-700 text-white w-full px-3 py-1 max-w-[150px] rounded-full hover:scale-110 transition-all mx-auto block mt-2"
+        <>
+          <p
+            className="uppercase flex justify-center items-center p-2 text-red-700 font-bold"
+            style={{ fontSize: "20px" }}
           >
-            Buy Now !
-          </button>
-        </div>
+            <sup className="font-bold">**</sup>
+            Online Video course will be available only for 3 months
+          </p>
+          <div className="flex justify-center flex-col items-center h-96">
+            <p className="text-red-600 font-bold">Course Fee: {amount} GBP</p>
+            <p>You have not purchased the course yet!</p>
+            <p>Click below to buy it</p>
+            <button
+              onClick={HandleSubmit}
+              className="bg-red-600 hover:bg-red-700 text-white w-full px-3 py-1 max-w-[150px] rounded-full hover:scale-110 transition-all mx-auto block mt-2"
+            >
+              Buy Now !
+            </button>
+          </div>
+        </>
       ) : (
         <RedirectToLogin />
       )}

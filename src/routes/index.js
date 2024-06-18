@@ -23,7 +23,7 @@ import CheckoutOffB from "../pages/onlinePayments/CheckoutOffB";
 import CheckoutOffM from "../pages/onlinePayments/CheckoutOffM";
 import FinalTest from "../pages/courseVideo/FinalTest";
 import Review from "../pages/reviews/Review";
-import ReviewList from "../pages/reviews/ReviewList";
+import ReviewForm from "../pages/reviews/ReviewForm";
 import PdfCourse from "../pages/courseVideo/PdfCourse";
 
 const router = createBrowserRouter([
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
       {
         path: "onlineCoursePayment",
         // 1250
-        element: <Checkoutt paymentType="onlineCoursePayment" amount="1250" />,
+        element: <Checkoutt paymentType="onlineCoursePayment" amount="500" />,
       },
       {
         path: "bookingConfirmedOnline",
@@ -121,8 +121,8 @@ const router = createBrowserRouter([
         element: <Review />,
       },
       {
-        path: "viewReviews",
-        element: <ReviewList />,
+        path: "addReviews",
+        element: <ReviewForm />,
       },
       {
         path: "pdfCourse",
