@@ -4,10 +4,10 @@ import "./Home.css";
 import "../mediaqueries.css";
 import { useNavigate } from "react-router-dom";
 
-import SlideImage1 from "../../assets/IMG-20240214-WA0009.jpg";
-import SlideImage2 from "../../assets/IMG-20240214-WA0008.jpg";
-import SlideImage3 from "../../assets/IMG-20240214-WA0010.jpg";
-import SlideImage4 from "../../assets/IMG-20240214-WA0013.jpg";
+import SlideImage1 from "../../assets/img1.jpg";
+import SlideImage2 from "../../assets/img2.jpg";
+import SlideImage3 from "../../assets/img3.jpg";
+import SlideImage4 from "../../assets/img4.jpg";
 
 import iBoxImage1 from "../../assets/spray.PNG";
 import iBoxImage2 from "../../assets/clipper.PNG";

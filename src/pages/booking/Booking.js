@@ -24,9 +24,39 @@ const Booking = () => {
     try {
       const res = await axios.post(SummaryApi.bookSlot.url, newSlot);
       if (res.data.status) toast.success(res.data.message);
+      setName("");
+      setDate("");
+      setTime("");
     } catch (error) {
       toast.error("slot is already booked");
     }
+  };
+
+  const handleDateChange = (e) => {
+    setDate(e.target.value);
+    if (!isMondayOrWednesday(e.target.value)) {
+      e.target.setCustomValidity("Please select a Monday or Wednesday");
+    } else {
+      e.target.setCustomValidity("");
+    }
+  };
+
+  const isMondayOrWednesday = (dateString) => {
+    const date = new Date(dateString);
+    const day = date.getDay();
+    return day === 1 || day === 3;
+  };
+
+  const getTodayDate = () => {
+    const today = new Date();
+    const year = today.getFullYear();
+    let month = today.getMonth() + 1;
+    let day = today.getDate();
+
+    month = month < 10 ? `0${month}` : month;
+    day = day < 10 ? `0${day}` : day;
+
+    return `${year}-${month}-${day}`;
   };
 
   const navigate = useNavigate();
@@ -40,25 +70,6 @@ const Booking = () => {
     offlineMCourse = userDetails.offlineMCoursePayment;
     onlineCourse = userDetails.onlineCoursePayment;
   }
-
-  // const dispatch = useDispatch();
-
-  // const fetchUserDetails = async () => {
-  //   const dataResponse = await fetch(SummaryApi.current_user.url, {
-  //     method: SummaryApi.current_user.method,
-  //     credentials: "include",
-  //   });
-
-  //   const dataApi = await dataResponse.json();
-  //   if (dataApi.success && dataApi.data) {
-  //     localStorage.setItem("session", JSON.stringify(dataApi.data));
-  //     dispatch(setUserDetails(dataApi.data));
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   fetchUserDetails();
-  // }, []);
 
   const dispatch = useDispatch();
 
@@ -135,10 +146,14 @@ const Booking = () => {
                 id="date"
                 name="date"
                 placeholder="Date"
-                required
                 value={date}
-                onChange={(e) => {
-                  setDate(e.target.value);
+                onChange={handleDateChange}
+                min={getTodayDate()}
+                required
+                onInvalid={(e) => {
+                  e.target.setCustomValidity(
+                    "Please select a Monday or Wednesday"
+                  );
                 }}
               />
             </div>
@@ -149,6 +164,8 @@ const Booking = () => {
                 name="time"
                 placeholder="Time"
                 required
+                min="10:00"
+                max="16:00"
                 value={time}
                 onChange={(e) => {
                   setTime(e.target.value);
