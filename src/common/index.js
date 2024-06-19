@@ -1,4 +1,5 @@
-const backendDomain = "https://inspired-studio-academy.onrender.com";
+// const backendDomain = "https://inspired-studio-academy.onrender.com";
+const backendDomain = "https://api.inspiredstudio-academy.com";
 const SummaryApi = {
   signUP: {
     url: `${backendDomain}/api/signup`,
