@@ -27,7 +27,7 @@ import ReviewForm from "../pages/reviews/ReviewForm";
 import PdfCourse from "../pages/courseVideo/PdfCourse";
 import PdfCourse2 from "../pages/courseVideo/PdfCourse2";
 import PdfCourse3 from "../pages/courseVideo/PdfCourse3";
-import SlotsForBegCourse from "../pages/SlotsForBegCourse";
+// import SlotsForBegCourse from "../pages/SlotsForBegCourse";
 import AllSubscription from "../pages/AllSubscribes";
 
 const router = createBrowserRouter([
@@ -92,10 +92,10 @@ const router = createBrowserRouter([
         path: "OfflineBPayItMonthly",
         element: <OfflineB />,
       },
-      {
-        path: "slotsForBegCourse",
-        element: <SlotsForBegCourse />,
-      },
+      // {
+      //   path: "slotsForBegCourse",
+      //   element: <SlotsForBegCourse />,
+      // },
       {
         path: "offlineMCoursePayment",
         // 300
