@@ -42,9 +42,15 @@ const AdminPanel = () => {
             <Link to={"all-slots"} className="px-2 py-1 hover:bg-slate-100">
               slot booked
             </Link>
-            {/* <Link to={"all-products"} className="px-2 py-1 hover:bg-slate-100">
+            <Link
+              to={"all-subscriptions"}
+              className="px-2 py-1 hover:bg-slate-100"
+            >
+              Subscribes
+            </Link>
+            <Link to={"all-products"} className="px-2 py-1 hover:bg-slate-100">
               All Products
-            </Link> */}
+            </Link>
           </nav>
         </div>
       </aside>

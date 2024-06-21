@@ -9,11 +9,11 @@ import SlideImage2 from "../../assets/img2.jpg";
 import SlideImage3 from "../../assets/img3.jpg";
 import SlideImage4 from "../../assets/img4.jpg";
 
-import iBoxImage1 from "../../assets/spray.PNG";
-import iBoxImage2 from "../../assets/clipper.PNG";
-import iBoxImage3 from "../../assets/Tech-3.jpg";
-import iBoxImage4 from "../../assets/dryer.PNG";
-import iBoxImage5 from "../../assets/tech-5.jpg";
+import iBoxImage1 from "../../assets/img1tech.jpg";
+import iBoxImage2 from "../../assets/img2tech.jpg";
+import iBoxImage3 from "../../assets/img3tech.jpg";
+import iBoxImage4 from "../../assets/img4tech.jpg";
+import iBoxImage5 from "../../assets/img5tech.jpg";
 
 import mBoxImage2 from "../../assets/IMG-20240228-WA0007.jpg";
 

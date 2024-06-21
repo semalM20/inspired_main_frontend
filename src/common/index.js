@@ -34,6 +34,14 @@ const SummaryApi = {
     url: `${backendDomain}/api/all-slot`,
     method: "get",
   },
+  allSubscription: {
+    url: `${backendDomain}/api/all-subscription`,
+    method: "get",
+  },
+  allProduct: {
+    url: `${backendDomain}/api/all-product`,
+    method: "get",
+  },
   forgotPassword: {
     url: `${backendDomain}/api/forgotPassword`,
     method: "post",
