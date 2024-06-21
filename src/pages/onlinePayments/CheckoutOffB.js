@@ -38,7 +38,7 @@ const CheckoutOffB = ({ paymentType, amount }) => {
           <div className="flex justify-center">
             <p className="text-red-600 font-bold">Course Fee: {amount} GBP</p>
             <p className="text-slate-500 line-through px-2 font-semibold">
-              1250 GBP
+              2499 GBP
             </p>
           </div>
           <p>You have not purchased the course yet!</p>
