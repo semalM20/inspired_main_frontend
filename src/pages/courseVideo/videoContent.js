@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./videoContent.css";
 import Sidebar from "./Sidebar";
 import VideoPlayer from "./VideoPlayer";
 import { useSelector } from "react-redux";
 import RedirectToLogin from "../../components/RedirectToLogin";
 import { Link, useNavigate } from "react-router-dom";
+import SummaryApi from "../../common";
+import { toast } from "react-toastify";
+import moment from "moment";
 
 const VideoContent = () => {
   const user = useSelector((state) => state?.user?.user);
@@ -416,14 +419,60 @@ const VideoContent = () => {
     navigate("/educationTest");
   };
 
+  const [allUsers, setAllUsers] = useState([]);
+
+  const fetchAllSubscriptions = async () => {
+    const fetchData = await fetch(SummaryApi.allSubscription.url, {
+      method: SummaryApi.allSubscription.method,
+      credentials: "include",
+    });
+
+    const dataResponse = await fetchData.json();
+
+    if (dataResponse.success) {
+      setAllUsers(dataResponse.data);
+    }
+    if (dataResponse.error) {
+      toast.error(dataResponse.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchAllSubscriptions();
+  }, []);
+
+  const displayedDates = new Set();
+
   return (
     <>
       {user?._id ? (
         onlineCourse ? (
           <>
-            <h6 style={{ textAlign: "center", fontSize: "40px" }}>
-              Video Lectures
-            </h6>
+            <div className="flex justify-around items-center">
+              <h6 style={{ textAlign: "center", fontSize: "40px" }}>
+                Video Lectures
+              </h6>
+              {allUsers.map((u, index) => {
+                if (
+                  user?._id === u.userId &&
+                  u.paymentType === "onlineCoursePayment" &&
+                  onlineCourse
+                ) {
+                  const formattedDate = moment(u.expirySubDate).format("LL");
+
+                  if (!displayedDates.has(formattedDate)) {
+                    displayedDates.add(formattedDate);
+                    return (
+                      <p key={index} className="text-black text-lg">
+                        <sup>**</sup>Course will expire on:{" "}
+                        <span className="text-red-600">{formattedDate}</span>
+                      </p>
+                    );
+                  }
+                }
+                return null;
+              })}
+            </div>
             <div className="app">
               <Sidebar videos={videos} onVideoSelect={setSelectedVideo} />
               <VideoPlayer video={selectedVideo} />
