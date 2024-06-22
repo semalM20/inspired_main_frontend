@@ -46,7 +46,7 @@ const AdminPanel = () => {
               to={"all-subscriptions"}
               className="px-2 py-1 hover:bg-slate-100"
             >
-              Subscribes
+              Video Course Subscribers
             </Link>
             <Link to={"all-products"} className="px-2 py-1 hover:bg-slate-100">
               All Products

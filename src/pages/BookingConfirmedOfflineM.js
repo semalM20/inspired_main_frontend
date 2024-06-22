@@ -25,12 +25,18 @@ const BookingConfirmedOfflineM = () => {
         offlineMCourse ? (
           <div className="flex flex-col justify-center items-center h-96">
             <p>You have successfully purchased the offline master's course </p>
-            <h1>Visit the store and check your schedule</h1>
+            <p className="text-red-600 capitalize my-2">
+              <sup>**</sup> call the Academy for the slots available{" "}
+            </p>
+            {/* <h1>Visit the store and check your schedule</h1> */}
           </div>
         ) : (
           <div className="flex justify-center flex-col items-center h-96">
             <p className="text-red-600 font-bold">
               Master's Course Fee: 300 GBP{" "}
+            </p>
+            <p className="text-red-600 capitalize my-2">
+              <sup>**</sup> call the Academy for the slots available{" "}
             </p>
             <p>You have not purchased the master's course</p>
             <p>click here to buy the course </p>

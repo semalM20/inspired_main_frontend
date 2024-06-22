@@ -29,6 +29,9 @@ const CheckoutOffM = ({ paymentType, amount }) => {
       {user?._id ? (
         <div className="flex justify-center flex-col items-center h-96">
           <p className="text-red-600 font-bold">Course Fee: {amount} GBP</p>
+          <p className="text-red-600 capitalize my-2">
+            <sup>**</sup> call the Academy for the slots available{" "}
+          </p>
           <p>You have not purchased the course yet!</p>
           <p>Click below to buy it</p>
           <button
