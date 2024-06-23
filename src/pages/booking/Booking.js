@@ -103,11 +103,13 @@ const Booking = () => {
     }
   };
   const handleOfflineBCoursePayment = () => {
-    if (offlineBCourse === 0) {
-      navigate("/offlineBCoursePayment");
-    } else {
-      navigate("/bookingConfirmedOfflineB");
-    }
+    // if (offlineBCourse === 0) {
+    //   // navigate("/offlineBCoursePayment");
+    //   navigate("/slotsForBegCourse");
+    // } else {
+    //   navigate("/bookingConfirmedOfflineB");
+    // }
+    navigate("/slotsForBegCourse");
   };
   const handleOfflineMCoursePayment = () => {
     if (offlineMCourse === 0) {

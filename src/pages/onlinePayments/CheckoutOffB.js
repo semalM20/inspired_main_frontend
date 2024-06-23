@@ -3,12 +3,16 @@ import { useSelector } from "react-redux";
 import RedirectToLogin from "../../components/RedirectToLogin";
 import axios from "axios";
 import SummaryApi from "../../common";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const CheckoutOffB = ({ paymentType, amount }) => {
   const user = useSelector((state) => state?.user?.user);
 
   const userDetails = JSON.parse(localStorage.getItem("session"));
+
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  // console.log("queryParams", queryParams.get("slotId"));
 
   const HandleSubmit = async (e) => {
     e.preventDefault();
@@ -17,6 +21,7 @@ const CheckoutOffB = ({ paymentType, amount }) => {
       paymentType,
       amount,
       userId: userDetails._id,
+      slotId: queryParams.get("slotId"),
     });
 
     if (res && res.data) {

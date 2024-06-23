@@ -48,6 +48,12 @@ const AdminPanel = () => {
             >
               Video Course Subscribers
             </Link>
+            <Link to={"add-slots"} className="px-2 py-1 hover:bg-slate-100">
+              Add Slots For Beginner Course
+            </Link>
+            <Link to={"show-slots"} className="px-2 py-1 hover:bg-slate-100">
+              Beginner Course Subscribers
+            </Link>
             <Link to={"all-products"} className="px-2 py-1 hover:bg-slate-100">
               All Products
             </Link>
