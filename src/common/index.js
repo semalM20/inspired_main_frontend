@@ -40,10 +40,6 @@ const SummaryApi = {
     url: `${backendDomain}/api/all-subscription`,
     method: "get",
   },
-  allProduct: {
-    url: `${backendDomain}/api/all-product`,
-    method: "get",
-  },
   forgotPassword: {
     url: `${backendDomain}/api/forgotPassword`,
     method: "post",
@@ -70,6 +66,50 @@ const SummaryApi = {
   },
   addBeginnerCourseSlots: {
     url: `${backendDomain}/api/add-beginner-course-slots`,
+    method: "post",
+  },
+
+  //products
+  uploadProduct: {
+    url: `${backendDomain}/api/upload-product`,
+    method: "post",
+  },
+  allProduct: {
+    url: `${backendDomain}/api/get-product`,
+    method: "get",
+  },
+  updateProduct: {
+    url: `${backendDomain}/api/update-product`,
+    method: "post",
+  },
+  productdetails: {
+    url: `${backendDomain}/api/product-details`,
+    method: "post",
+  },
+  categoryWiseProduct: {
+    url: `${backendDomain}/api/category-product`,
+    method: "post",
+  },
+
+  //cart
+  addToCartProduct: {
+    url: `${backendDomain}/api/addtocart`,
+    method: "post",
+  },
+  addToCartProductCount: {
+    url: `${backendDomain}/api/countAddToCartProduct`,
+    method: "get",
+  },
+  addToCartProductView: {
+    url: `${backendDomain}/api/view-cart-product`,
+    method: "get",
+  },
+  updateCartProduct: {
+    url: `${backendDomain}/api/update-cart-product`,
+    method: "post",
+  },
+  deleteCartProduct: {
+    url: `${backendDomain}/api/delete-cart-product`,
     method: "post",
   },
 };

@@ -1,12 +1,13 @@
 import React from "react";
-import "../style.css";
-import "../mediaqueries.css";
+// import ShopProductDetails from "../products/ShopProductDetails";
 import Footer from "../../components/Footer";
 
 const Shop = () => {
   return (
     <>
-      <div className="h-[460px]">Coming Soon...</div>
+      <h3 className=" mb-[555px]">Coming Soon...</h3>
+      {/* <ShopProductDetails category={"Products"} heading={"All Products"} />
+      <ShopProductDetails category={"Combos"} heading={"All Combos"} /> */}
       <Footer />
     </>
   );

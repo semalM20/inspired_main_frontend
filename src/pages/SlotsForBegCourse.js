@@ -17,7 +17,7 @@ const SlotsForBegCourse = () => {
       try {
         const response = await axios.get(SummaryApi.BeginnerCourseSlots.url);
         setSlots(response.data.data);
-        console.log("slotssssss", response.data);
+        // console.log("slotssssss", response.data);
       } catch (error) {
         console.error("Error fetching slots:", error);
       }

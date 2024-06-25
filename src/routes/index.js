@@ -30,7 +30,10 @@ import PdfCourse3 from "../pages/courseVideo/PdfCourse3";
 import SlotsForBegCourse from "../pages/SlotsForBegCourse";
 import AllSubscription from "../pages/AllSubscribes";
 import AddSlots from "../pages/AddSlots";
-import ShowSlots from "./ShowSlots";
+import ShowSlots from "../pages/ShowSlots";
+import AllProducts from "../pages/products/AllProducts";
+import ProductDetails from "../pages/products/ProductDetails";
+import Cart from "../pages/cart/Cart";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +63,10 @@ const router = createBrowserRouter([
       {
         path: "shop",
         element: <Shop />,
+      },
+      {
+        path: "shop/products/:id",
+        element: <ProductDetails />,
       },
       {
         path: "videoCourse",
@@ -147,6 +154,10 @@ const router = createBrowserRouter([
         element: <PdfCourse3 />,
       },
       {
+        path: "cart",
+        element: <Cart />,
+      },
+      {
         path: "admin-panel",
         element: <AdminPanel />,
         children: [
@@ -172,7 +183,7 @@ const router = createBrowserRouter([
           },
           {
             path: "all-products",
-            element: <AllSlots />,
+            element: <AllProducts />,
           },
         ],
       },

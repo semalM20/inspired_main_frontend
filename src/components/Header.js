@@ -11,6 +11,7 @@ import ROLE from "../common/role";
 
 const Header = () => {
   const user = useSelector((state) => state?.user?.user);
+  const cartCount = useSelector((state) => state?.cart?.count);
 
   const dispatch = useDispatch();
 
@@ -115,14 +116,19 @@ const Header = () => {
                 </div>
               )}
             </div>
-            <div className="text-2xl relative text-white">
-              <span>
-                <FaShoppingCart />
-              </span>
-              <div className="bg-red-600 text-white w-5 h-5 rounded-full p-1 flex items-center justify-center absolute -top-2 -right-3">
-                <p className="text-sm">0</p>
+            {user?._id && (
+              // <Link to={"/cart"}
+              <div className="text-2xl relative text-white">
+                <span>
+                  <FaShoppingCart />
+                </span>
+                <div className="bg-red-600 text-white w-5 h-5 rounded-full p-1 flex items-center justify-center absolute -top-2 -right-3">
+                  <p className="text-sm">{cartCount}</p>
+                </div>
               </div>
-            </div>
+
+              // {/* </Link> */}
+            )}
 
             <div>
               {user?._id ? (

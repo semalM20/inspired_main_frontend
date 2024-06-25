@@ -17,7 +17,7 @@ const ShowSlots = () => {
     });
 
     const dataResponse = await fetchData.json();
-    console.log(dataResponse);
+    // console.log(dataResponse);
 
     if (dataResponse.success) {
       setAllSlots(dataResponse.data);
