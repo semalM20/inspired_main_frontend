@@ -136,6 +136,8 @@ const ShopProductDetails = ({ category, heading }) => {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
 
+  const userDetails = JSON.parse(localStorage.getItem("session"));
+
   const loadingLst = new Array(13).fill(null);
 
   // const { fetchUserAddToCart } = useContext(Context);
@@ -154,8 +156,8 @@ const ShopProductDetails = ({ category, heading }) => {
     // setCartProductCount(dataApi?.data?.count);
     dispatch(setCartCount(dataApi?.data?.count));
   };
-  const handleAddToCart = async (e, id) => {
-    await addToCart(e, id);
+  const handleAddToCart = async (e, id, uId) => {
+    await addToCart(e, id, uId);
     fetchUserAddToCart();
   };
 
@@ -250,7 +252,7 @@ const ShopProductDetails = ({ category, heading }) => {
                     <button
                       className="text-sm bg-red-600 hover:bg-red-700 text-white px-3 py-0.5 rounded-full"
                       onClick={(e) => {
-                        handleAddToCart(e, product?._id);
+                        handleAddToCart(e, product?._id, userDetails?._id);
                       }}
                     >
                       Add to Cart

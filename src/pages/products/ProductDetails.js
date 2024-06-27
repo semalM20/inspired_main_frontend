@@ -18,6 +18,8 @@ const ProductDetails = () => {
     sellingPrice: "",
   });
 
+  const userDetails = JSON.parse(localStorage.getItem("session"));
+
   const [loading, setLoading] = useState(true);
   // const productImageListLoading = new Array(4).fill(null);
   const [activeImage, setActiveImage] = useState("");
@@ -89,13 +91,13 @@ const ProductDetails = () => {
 
   const navigate = useNavigate();
 
-  const handleAddToCart = async (e, id) => {
-    await addToCart(e, id);
+  const handleAddToCart = async (e, id, uId) => {
+    await addToCart(e, id, uId);
     fetchUserAddToCart();
   };
 
-  const handleBuyProduct = async (e, id) => {
-    await addToCart(e, id);
+  const handleBuyProduct = async (e, id, uId) => {
+    await addToCart(e, id, uId);
     fetchUserAddToCart();
     navigate("/cart");
   };
@@ -216,14 +218,14 @@ const ProductDetails = () => {
               <button
                 className="border-2 border-red-600 rounded px-3 py-1 min-w-[120px] text-red-600 font-medium hover:bg-red-600 hover:text-white"
                 onClick={(e) => {
-                  handleBuyProduct(e, data?._id);
+                  handleBuyProduct(e, data?._id, userDetails?._id);
                 }}
               >
                 Buy
               </button>
               <button
                 className="border-2 border-red-600 rounded px-3 py-1 min-w-[120px] bg-red-600 text-white font-medium hover:bg-white hover:text-red-600"
-                onClick={(e) => handleAddToCart(e, data?._id)}
+                onClick={(e) => handleAddToCart(e, data?._id, userDetails?._id)}
               >
                 Add To Cart
               </button>

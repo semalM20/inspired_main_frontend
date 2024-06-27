@@ -112,6 +112,11 @@ const SummaryApi = {
     url: `${backendDomain}/api/delete-cart-product`,
     method: "post",
   },
+  //checkout
+  shopUserDetails: {
+    url: `${backendDomain}/api/shop-user-details`,
+    method: "post",
+  },
 };
 
 export default SummaryApi;

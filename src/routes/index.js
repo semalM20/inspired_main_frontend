@@ -34,6 +34,9 @@ import ShowSlots from "../pages/ShowSlots";
 import AllProducts from "../pages/products/AllProducts";
 import ProductDetails from "../pages/products/ProductDetails";
 import Cart from "../pages/cart/Cart";
+import ShopCheckout from "../pages/checkout/ShopCheckout";
+import CheckoutSummary from "../pages/checkout/CheckoutSummary";
+import ShopPayment from "../pages/checkout/ShopPayment";
 
 const router = createBrowserRouter([
   {
@@ -156,6 +159,18 @@ const router = createBrowserRouter([
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "shopCheckout",
+        element: <ShopCheckout />,
+      },
+      {
+        path: "checkoutSummary",
+        element: <CheckoutSummary />,
+      },
+      {
+        path: "shopPayment",
+        element: <ShopPayment />,
       },
       {
         path: "admin-panel",

@@ -126,8 +126,7 @@ const Header = () => {
                   <p className="text-sm">{cartCount}</p>
                 </div>
               </div>
-
-              // {/* </Link> */}
+              // </Link>
             )}
 
             <div>
