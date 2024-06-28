@@ -117,6 +117,14 @@ const SummaryApi = {
     url: `${backendDomain}/api/shop-user-details`,
     method: "post",
   },
+  shopPayment: {
+    url: `${backendDomain}/api/shop-payment`,
+    method: "post",
+  },
+  shopBuyers: {
+    url: `${backendDomain}/api/shop-user-buyers`,
+    method: "get",
+  },
 };
 
 export default SummaryApi;

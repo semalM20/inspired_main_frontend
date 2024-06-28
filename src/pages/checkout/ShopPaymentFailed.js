@@ -3,13 +3,13 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import RedirectToLogin from "../../components/RedirectToLogin";
 
-const Failed = () => {
+const ShopPaymentFailed = () => {
   const user = useSelector((state) => state?.user?.user);
 
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/shopCheckout");
+    navigate("/checkoutSummary");
   };
 
   return (
@@ -31,4 +31,4 @@ const Failed = () => {
   );
 };
 
-export default Failed;
+export default ShopPaymentFailed;

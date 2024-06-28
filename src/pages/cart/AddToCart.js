@@ -5,6 +5,11 @@ const AddToCart = async (e, id, uId) => {
   e?.stopPropagation();
   e?.preventDefault();
 
+  if (!uId) {
+    toast.error("You must be logged in to add items to your cart");
+    return;
+  }
+
   const response = await fetch(SummaryApi.addToCartProduct.url, {
     method: SummaryApi.addToCartProduct.method,
     credentials: "include",

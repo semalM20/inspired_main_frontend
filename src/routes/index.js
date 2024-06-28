@@ -36,7 +36,9 @@ import ProductDetails from "../pages/products/ProductDetails";
 import Cart from "../pages/cart/Cart";
 import ShopCheckout from "../pages/checkout/ShopCheckout";
 import CheckoutSummary from "../pages/checkout/CheckoutSummary";
-import ShopPayment from "../pages/checkout/ShopPayment";
+import ShopPaymentFailed from "../pages/checkout/ShopPaymentFailed";
+import ShopPaymentSuccess from "../pages/checkout/ShopPaymentSuccess";
+import ShopProducts from "../pages/checkout/ShopProducts";
 
 const router = createBrowserRouter([
   {
@@ -169,8 +171,12 @@ const router = createBrowserRouter([
         element: <CheckoutSummary />,
       },
       {
-        path: "shopPayment",
-        element: <ShopPayment />,
+        path: "shopPaymentFailed",
+        element: <ShopPaymentFailed />,
+      },
+      {
+        path: "shopPaymentSuccess",
+        element: <ShopPaymentSuccess />,
       },
       {
         path: "admin-panel",
@@ -199,6 +205,10 @@ const router = createBrowserRouter([
           {
             path: "all-products",
             element: <AllProducts />,
+          },
+          {
+            path: "shop-products",
+            element: <ShopProducts />,
           },
         ],
       },
