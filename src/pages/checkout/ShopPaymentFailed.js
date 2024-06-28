@@ -9,7 +9,7 @@ const ShopPaymentFailed = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/checkoutSummary");
+    navigate("/shopCheckout");
   };
 
   return (
