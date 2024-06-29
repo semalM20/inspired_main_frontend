@@ -70,7 +70,7 @@ const CheckoutSummary = () => {
     e.preventDefault();
 
     let res = await axios.post(SummaryApi.shopPayment.url, {
-      amount: totalPrice,
+      amount: totalPrice + 2,
       userId: userDetails._id,
     });
 
@@ -103,8 +103,16 @@ const CheckoutSummary = () => {
                     <p>{totalQty}</p>
                   </div>
                   <div className="flex justify-between items-center px-4 gap-2 font-medium text-lg text-slate-600">
-                    <p>Total Price</p>
+                    <p>Price</p>
                     <p>{totalPrice.toFixed(2)} GBP</p>
+                  </div>
+                  <div className="flex justify-between items-center px-4 gap-2 font-medium text-lg text-slate-600">
+                    <p>Shipping Charges</p>
+                    <p>2.00 GBP</p>
+                  </div>
+                  <div className="flex justify-between items-center px-4 gap-2 font-medium text-lg text-slate-600">
+                    <p>Total Price</p>
+                    <p>{(totalPrice + 2.0).toFixed(2)} GBP</p>
                   </div>
                   <button
                     className="bg-blue-600 p-2 mt-2 text-white w-full"

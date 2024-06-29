@@ -227,7 +227,7 @@ const ShopProductDetails = ({ category, heading }) => {
                   className="w-full min-w-[280px] md:min-w-[320px] max-w-[280px] md:max-w-[320px] bg-white rounded-sm shadow "
                   onClick={scrollTop}
                 >
-                  <div className="bg-slate-200 h-48 p-4 min-w-[280px] md:min-w-[145px] flex justify-center items-center">
+                  <div className="bg-white h-48 p-4 min-w-[280px] md:min-w-[145px] flex justify-center items-center">
                     <img
                       src={product?.productImage[0]}
                       alt="product-img"
