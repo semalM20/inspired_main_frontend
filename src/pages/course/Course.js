@@ -274,7 +274,8 @@ const Course = () => {
           <div className="course-info">
             <h1>Online Beginner Barber Step-By-Step Course was for £1250</h1>
             <h1>And now for first 100 people 60% OFF/- </h1>
-            <h2 style={{ color: "#977656" }}>
+            {/* <h2 style={{ color: "#977656" }}> */}
+            <h2 style={{ color: "white" }}>
               {" "}
               <u>Now only for £500 </u>
             </h2>
@@ -295,7 +296,8 @@ const Course = () => {
                   />
                 </div>
                 <div className="flip-card-back">
-                  <h4 style={{ color: "#977656" }}>
+                  {/* <h4 style={{ color: "#977656" }}> */}
+                  <h4 style={{ color: "white" }}>
                     {" "}
                     This course, created by our expert Adrian, includes:{" "}
                   </h4>{" "}
@@ -345,10 +347,11 @@ const Course = () => {
                 />
               </div>
               <div className="flip-card-back">
-                <h4 style={{ color: "#977656" }}>
+                {/* <h4 style={{ color: "#977656" }}> */}
+                <h4 style={{ color: "white" }}>
                   Beginner Barber Course Modules :
                 </h4>
-                <br></br>
+                <br />
                 <h5 style={{ fontSize: "14px" }}>~ Clipper Grades </h5>
                 <h5 style={{ fontSize: "14px" }}>~ One Length Haircut </h5>
                 <h5 style={{ fontSize: "14px" }}>~ Scissor Cut-Underhand </h5>
@@ -392,9 +395,11 @@ const Course = () => {
                 />
               </div>
               <div className="flip-card-back">
-                <h4 style={{ color: "#977656" }}>
+                {/* <h4 style={{ color: "#977656" }}> */}
+                <h4 style={{ color: "white" }}>
                   Master Class-WorkShop Educator Modules :
                 </h4>
+                <br />
                 <h5> ~ the top part </h5>
                 <h5> ~ the sides </h5>
                 <h5> ~ the uniform shape of the haircut </h5>
@@ -429,7 +434,8 @@ const Course = () => {
             />
           </div>
           <div className="info-item-course">
-            <p style={{ color: "#977656", marginBottom: "5%" }}>
+            {/* <p style={{ color: "#977656", marginBottom: "5%" }}> */}
+            <p style={{ color: "white", marginBottom: "5%" }}>
               <strong className="text-xl">
                 {" "}
                 Sign up now for our Barber Courses.{" "}
@@ -470,7 +476,8 @@ const Course = () => {
         </h3>
         <div className="info-grid-course">
           <div className="info-item-off-course">
-            <p style={{ color: "#977656" }}>
+            {/* <p style={{ color: "#977656" }}> */}
+            <p style={{ color: "white" }}>
               💈Beginner Barber Course 💈<br></br>{" "}
             </p>
 
@@ -490,7 +497,8 @@ const Course = () => {
               <strong>*Texturizing the top </strong> <br></br>
               <strong>*Razor fade </strong> <br></br>
             </p>
-            <p style={{ color: "#977656" }}>
+            {/* <p style={{ color: "#977656" }}> */}
+            <p style={{ color: "white" }}>
               {" "}
               ✂ <strong>
                 Equipment from the Academy during the Course
@@ -498,7 +506,8 @@ const Course = () => {
             </p>
           </div>
           <div className="info-item-off-course">
-            <p style={{ color: "#977656" }}>
+            {/* <p style={{ color: "#977656" }}> */}
+            <p style={{ color: "white" }}>
               At the end of the Course, you can benefit from the{" "}
               <strong>Diploma (Internationally Accredited)</strong>.<br></br>
               The group consists of 4 people, which allows us to pay attention
@@ -520,7 +529,8 @@ const Course = () => {
             </p>
           </div>
           <div className="info-item-off-course">
-            <p style={{ color: "#977656" }}>
+            {/* <p style={{ color: "#977656" }}> */}
+            <p style={{ color: "white" }}>
               {" "}
               <strong> Master Class-WorkShop Educator: Adrian.M </strong>
               <br></br>{" "}
@@ -544,7 +554,8 @@ const Course = () => {
                 <br></br>
               </strong>
             </p>
-            <p style={{ color: "#977656" }}>
+            {/* <p style={{ color: "#977656" }}> */}
+            <p style={{ color: "white" }}>
               {" "}
               <strong>
                 {" "}

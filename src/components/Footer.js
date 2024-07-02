@@ -56,6 +56,10 @@ const Footer = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
+              <p>&nbsp;----------------------------</p>
+              <p className="capitalize">
+                &nbsp;&nbsp;Close to Train Station 🚉
+              </p>
             </div>
           </div>
 
